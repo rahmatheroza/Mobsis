@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_info_kunci">
+
+    <fragment
+        android:id="@+id/nav_info_kunci"
+        android:name="com.websaya.m_sismalv4.ui.info_kunci.InfoKunciFragment"
+        android:label="Info Kunci"
+        tools:layout="@layout/infokunci_form" />
+
+    <fragment
+        android:id="@+id/nav_desa"
+        android:name="com.websaya.m_sismalv4.ui.desa.DesaFragment"
+        android:label="Desa"
+        tools:layout="@layout/desa_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_regmal_1"
+        android:name="com.websaya.m_sismalv4.ui.regmal1.Regmal1Fragment"
+        android:label="Regmal 1"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_data_penemuan"
+        android:name="com.websaya.m_sismalv4.ui.r2_data_penemuan.DataPenemuanFragment"
+        android:label="Data Penemuan"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_data_logistik"
+        android:name="com.websaya.m_sismalv4.ui.r2_data_logistik.DataLogistikFragment"
+        android:label="Data Logistik"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_stok_obat"
+        android:name="com.websaya.m_sismalv4.ui.r2_stok_obat.StokObatFragment"
+        android:label="Stok Obat"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_vektor"
+        android:name="com.websaya.m_sismalv4.ui.vektor.VektorFragment"
+        android:label="Vektor"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_desa_fokus_aktif"
+        android:name="com.websaya.m_sismalv4.ui.desa_fokus_aktif.DesaFokusAktifFragment"
+        android:label="Desa Fokus Aktif"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_fokus_aktif"
+        android:name="com.websaya.m_sismalv4.ui.fokus_aktif.FokusAktifFragment"
+        android:label="Fokus Aktif"
+        tools:layout="@layout/regmal1_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_kasus_indigenous"
+        android:name="com.websaya.m_sismalv4.ui.hasil_notifikasi.HasilNotifikasiFragment"
+        android:label="Kasus Indigenous"
+        tools:layout="@layout/regmal1_list_fragment" />
+</navigation>

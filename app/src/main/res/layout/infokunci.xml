@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryLight">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".UpdateInfoKunci">
+
+            <TextView
+                android:id="@+id/fieldNamaPetugas"
+                style="@style/text_view_medium_style"
+                android:text="Sri Midawati, Am. Keb."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/text_view_medium_style"
+                android:id="@+id/fieldTahun"
+                android:text="2020"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldNamaPetugas" />
+
+            <TextView
+                android:id="@+id/fieldPropinsi"
+                style="@style/text_view_medium_style"
+                android:text="South Sumatera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldTahun" />
+
+            <TextView
+                android:id="@+id/fieldKabKota"
+                style="@style/text_view_medium_style"
+                android:text="Lahat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldPropinsi" />
+
+            <TextView
+                android:id="@+id/fieldKec"
+                style="@style/text_view_medium_style"
+                android:text="PAGAR JATI"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldKabKota" />
+
+            <TextView
+                android:id="@+id/fieldNamaFaskes"
+                style="@style/text_view_medium_style"
+                android:text="PUSKESMAS PAGAR JATI"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldKec" />
+
+            <TextView
+                android:id="@+id/fieldIdFaskes"
+                style="@style/text_view_medium_style"
+                android:text="1604"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldNamaFaskes" />
+
+            <TextView
+                android:id="@+id/fieldAPIKab"
+                style="@style/text_view_medium_style"
+                android:text="12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldIdFaskes" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/text_view_small_style"
+                android:text="Nama Petugas"
+                app:layout_constraintBottom_toTopOf="@+id/fieldNamaPetugas"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/text_view_small_style"
+                android:text="Tahun Pencatatan"
+                app:layout_constraintBottom_toTopOf="@+id/fieldTahun"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/text_view_small_style"
+                android:text="Provinsi"
+                app:layout_constraintBottom_toTopOf="@+id/fieldPropinsi"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/text_view_small_style"
+                android:text="Kabupaten / Kota"
+                app:layout_constraintBottom_toTopOf="@+id/fieldKabKota"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/text_view_small_style"
+                android:text="Kecamatan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintBottom_toTopOf="@+id/fieldKec"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/text_view_small_style"
+                android:text="Nama Faskes"
+                app:layout_constraintBottom_toTopOf="@+id/fieldNamaFaskes"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/text_view_small_style"
+                android:text="Nomor ID Faskes"
+                app:layout_constraintBottom_toTopOf="@+id/fieldIdFaskes"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/text_view_small_style"
+                android:text="API Kabupaten"
+                app:layout_constraintBottom_toTopOf="@+id/fieldAPIKab"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

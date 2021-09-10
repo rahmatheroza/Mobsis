@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_info_kunci">
+        <item
+            android:id="@+id/nav_info_kunci"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Info Kunci" />
+        <item
+            android:id="@+id/nav_desa"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Desa" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_regmal_1">
+        <item
+            android:id="@+id/nav_regmal_1"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="@string/regmal_1" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_regmal_2">
+        <item
+            android:id="@+id/nav_data_penemuan"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Data Penemuan" />
+        <item
+            android:id="@+id/nav_data_logistik"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Data Logistik" />
+        <item
+            android:id="@+id/nav_stok_obat"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Putus Stok Obat - Uji Silang" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_vektor">
+        <item
+            android:id="@+id/nav_vektor"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="@string/vektor" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_fokus">
+        <item
+            android:id="@+id/nav_desa_fokus_aktif"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Desa Fokus Aktif" />
+        <item
+            android:id="@+id/nav_fokus_aktif"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Fokus Aktif Data PKM" />
+        <item
+            android:id="@+id/nav_kasus_indigenous"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Kasus Indigenous Tercatat" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_other">
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/ic_baseline_cloud_upload_24"
+            android:title="Upload ke Server Sismal" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_highlight_off_24"
+            android:title="@string/logout" />
+    </group>
+</menu>
